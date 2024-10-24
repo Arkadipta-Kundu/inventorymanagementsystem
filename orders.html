@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Orders</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Manage Orders</h1>
+        <a href="index.html">Back to Dashboard</a>
+    </header>
+
+    <main>
+        <h2>Create New Order</h2>
+        <form id="order-form">
+            <label for="item">Item Name:</label>
+            <input type="text" id="order-item" title="Enter the item name" placeholder="Item Name" required>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="order-quantity" title="Enter the quantity" placeholder="Quantity" required>
+            <button type="submit">Add Order</button>
+        </form>
+
+        <h2>Order List</h2>
+        <ul id="order-list"></ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
